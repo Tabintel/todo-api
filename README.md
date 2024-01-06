@@ -14,10 +14,10 @@ A simple RESTful Todo list API.
 ##### Setup and Run
 
 1. Clone the Repository
-   ```bash
-   git clone https://github.com/tabintel/todo-api.git
-   cd todo-api
-   ```
+```bash
+git clone https://github.com/tabintel/todo-api.git
+cd todo-api
+```
 2. Run this command to install all the dependencies
 ```bash
 go mod tidy
