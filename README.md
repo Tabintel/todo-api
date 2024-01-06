@@ -1,32 +1,32 @@
-# Todo List API
+#### Todo API
 
-## Overview
+A simple RESTful Todo list API.
 
-This project implements a simple Todo List API using the Gin-gonic framework, MongoDB for data storage, and follows the Controller-Service-Repository architecture. The API provides endpoints to perform CRUD operations on todo items.
+##### Endpoints
 
-## Project Structure
+- `POST /todos`: Create a new todo.
+- `GET /todos`: Retrieve all todos.
+- `GET /todos/:id`: Retrieve a todo by ID.
+- `PUT /todos/:id`: Update a todo by ID.
+- `DELETE /todos/:id`: Delete a todo by ID.
 
-The project follows a standard Go project structure:
 
-- `controllers`: Contains the controllers handling HTTP requests.
-- `models`: Defines the data models used in the application.
-- `repositories`: Manages the interaction with the MongoDB database.
-- `services`: Implements the business logic for todo-related operations.
-- `tests`: Contains unit tests for the application.
+##### Setup and Run
 
-## Technologies Used
-
-- **Gin-gonic:** A web framework written in Go.
-- **MongoDB:** Used as the database for storing todo items.
-- **Uber Zap:** A logging library used for creating well-structured log files.
-
-## Setup
-
-1. **Install Go:**
-   - [Download and Install Go](https://golang.org/doc/install)
-
-2. **Install Dependencies:**
+1. Clone the Repository
    ```bash
-   go get -u github.com/gin-gonic/gin
-   go get -u go.mongodb.org/mongo-driver/mongo
-   go get -u go.uber.org/zap
+   git clone https://github.com/tabintel/todo-api.git
+   cd todo-api
+   ```
+2. Run this command to install all the dependencies
+```bash
+go mod tidy
+```
+
+3. Run the application with this command
+```bash
+go run main.go
+
+```
+
+Here is the [Postman API Documentation,](https://documenter.getpostman.com/view/31909794/2s9YsJAXoT) for testing the API endpoints.
